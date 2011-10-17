@@ -5,5 +5,6 @@ gem 'sqlite3'
 gem 'devise'
 
 group :test do
-  gem 'rspec'
+  gem 'rspec-rails'
+  gem 'capybara'
 end
