@@ -11,6 +11,8 @@ describe 'Devise' do
       click_link 'Forgot your password?'
       fill_in 'Email', :with =>'user@example.com'
       click_button 'Send me reset password instructions'
+
+      page.should have_content 'Sign in'
     end
   end
 end
